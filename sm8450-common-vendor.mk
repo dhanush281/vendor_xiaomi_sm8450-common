@@ -252,32 +252,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8450-common/proprietary/vendor/firmware/a730_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a730_sqe.fw \
     vendor/xiaomi/sm8450-common/proprietary/vendor/firmware/gmu_gen70000.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gmu_gen70000.bin \
     vendor/xiaomi/sm8450-common/proprietary/vendor/gpu/kbc/sequence_manifest.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/sequence_manifest.bin \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/gpu/kbc/unified_kbcs_32.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_32.bin \
     vendor/xiaomi/sm8450-common/proprietary/vendor/gpu/kbc/unified_kbcs_64.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_64.bin \
     vendor/xiaomi/sm8450-common/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin
 
 PRODUCT_PACKAGES += \
     vendor.qti.diaghal-V1-ndk \
-    eglSubDriverAndroid \
-    libEGL_adreno \
-    libGLESv1_CM_adreno \
-    libGLESv2_adreno \
-    libVkLayer_ADRENO_qprofiler \
-    libq3dtools_adreno \
-    libq3dtools_esx \
-    libCB \
-    libOpenCL \
-    libadreno_app_profiles \
-    libadreno_utils \
-    libgpudataproducer \
-    libgsl \
-    libkcl \
-    libkernelmanager \
-    libllvm-glnext \
-    libllvm-qcom \
-    libllvm-qgl \
-    libvmmem \
-    vendor.qti.qspmhal@1.0 \
     android.hardware.secure_element@1.0-impl \
     btaudio_offload_if \
     com.qualcomm.qti.dpm.api@1.0_vendor \
@@ -290,6 +269,13 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.uceservice@2.2 \
     com.qualcomm.qti.uceservice@2.3 \
     deviceInfoServiceModuleNr \
+    eglSubDriverAndroid \
+    libEGL_adreno \
+    libGLESv1_CM_adreno \
+    libGLESv2_adreno \
+    libVkLayer_ADRENO_qprofiler \
+    libq3dtools_adreno \
+    libq3dtools_esx \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.gatekeeper@1.0-impl-qti \
     audio.primary.taro \
@@ -323,6 +309,7 @@ PRODUCT_PACKAGES += \
     lib-rtpcommon \
     lib-rtpcore \
     lib-rtpsl \
+    libCB \
     libEvrcSwCodec \
     libFace3DTA \
     libFace3D_hlos \
@@ -331,6 +318,7 @@ PRODUCT_PACKAGES += \
     libGPTEE_vendor \
     libGPreqcancel \
     libGPreqcancel_svc \
+    libOpenCL \
     libQ6MSFR_manager_stub \
     libQSEEComAPI \
     libQTEEConnector_listener \
@@ -343,6 +331,8 @@ PRODUCT_PACKAGES += \
     lib_bt_lhdc \
     lib_misound_asc \
     libadm \
+    libadreno_app_profiles \
+    libadreno_utils \
     libadsp_default_listener \
     libadsprpc \
     libagm \
@@ -406,7 +396,9 @@ PRODUCT_PACKAGES += \
     libfmpal \
     libgame_enhance \
     libgnsspps \
+    libgpudataproducer \
     libgrpc++_unsecure_prebuilt \
+    libgsl \
     libhdr_backlight_adapter \
     libhdr_tm \
     libhdrdynamic \
@@ -416,11 +408,16 @@ PRODUCT_PACKAGES += \
     libizat_core \
     libjnihelper \
     libkaraokepal \
+    libkcl \
+    libkernelmanager \
     libkeymasterdeviceutils \
     libkeymasterprovision \
     libkeymasterutils \
     liblbs_core \
     liblistensoundmodel2vendor \
+    libllvm-glnext \
+    libllvm-qcom \
+    libllvm-qgl \
     libloc_api_v02 \
     libloc_api_wds \
     libloc_base_util \
@@ -596,6 +593,7 @@ PRODUCT_PACKAGES += \
     libultrasound_notify \
     libvideotxr \
     libvideoutils \
+    libvmmem \
     libvppcommon \
     libvpphcp \
     libvpphvx \
@@ -790,6 +788,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.memory.pasrmanager@1.0 \
     vendor.qti.memory.pasrmanager@1.1 \
     vendor.qti.qspmhal@1.0-impl \
+    vendor.qti.qspmhal@1.0 \
     com.qualcomm.qti.dpm.api@1.0 \
     lib-imsvideocodec \
     lib-imsvt \
@@ -966,7 +965,7 @@ PRODUCT_PACKAGES += \
     sensors.qti \
     shsusrd \
     sscrpcd \
-    ssgqmigd \
+    ssgqmigd64 \
     ssgtzd \
     ssr_diag \
     ssr_setup \
@@ -991,9 +990,6 @@ PRODUCT_PACKAGES += \
     system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so \
     system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so \
     system_ext_priv-app_WfdService_lib_arm64_libwfdnative_so \
-    vendor_lib_libEGL_adreno_so \
-    vendor_lib_libGLESv2_adreno_so \
-    vendor_lib_libq3dtools_adreno_so \
     vendor_lib64_libEGL_adreno_so \
     vendor_lib64_libGLESv2_adreno_so \
     vendor_lib64_libq3dtools_adreno_so
